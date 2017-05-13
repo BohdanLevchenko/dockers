@@ -1,0 +1,5 @@
+version '1.0-SNAPSHOT'
+
+task start(type: Exec) {
+    commandLine 'docker', 'run', '-p', '8082:8080', "zurelian/${project.name}"
+}
