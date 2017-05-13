@@ -1,0 +1,11 @@
+version '1.0-SNAPSHOT'
+
+subprojects {
+    task build(type: Exec) {
+        commandLine 'docker', 'build', '-t', "zurelian/${project.name}", "."
+    }
+
+    task clean(type: Exec) {
+        commandLine 'docker', 'rmi', '-f', "zurelian/${project.name}"
+    }
+}

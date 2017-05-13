@@ -1,0 +1,3 @@
+rootProject.name = 'dockers'
+
+include 'java.base'
